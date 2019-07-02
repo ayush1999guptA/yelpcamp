@@ -7,7 +7,7 @@ var express       = require("express"),
     mongoose      = require("mongoose"),
     seedDB        = require("./seeds");
 
-mongoose.connect("mongodb://localhost/yelp_camp",{ useNewUrlParser: true } );
+mongoose.connect("mongodb+srv://ayush1999guptA:therock@cluster0-tajvd.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser: true } );
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/public"));
 app.use( require("express-session")({
